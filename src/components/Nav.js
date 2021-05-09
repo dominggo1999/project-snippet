@@ -12,6 +12,8 @@ const Nav = () => {
       type: 'changeTheme',
       payload: e.target.value,
     });
+
+    localStorage.setItem('theme', JSON.stringify({ userTheme: e.target.value }));
   };
 
   return (
