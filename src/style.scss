@@ -44,7 +44,7 @@ a {
 }
 
 a.link-active {
-  color: #007acc;
+  color: #a8ff60;
 }
 
 .snippet {
@@ -108,6 +108,17 @@ a.link-active {
     a {
       padding: 5px 0;
     }
+  }
+
+  label {
+    color: #a8ff60;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+  }
+
+  // Options
+  select {
+    margin-bottom: 20px;
   }
 }
 

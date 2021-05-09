@@ -43,7 +43,7 @@ const App = () => {
             <Switch>
               <Route
                 exact
-                path="/linter"
+                path="/"
               >
                 <Linter
                   copyText={copyText}

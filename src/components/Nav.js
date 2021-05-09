@@ -37,7 +37,8 @@ const Nav = () => {
         </select>
         <NavLink
           activeClassName="link-active"
-          to="/linter"
+          exact
+          to="/"
         >.eslintrc.json
         </NavLink>
         <NavLink
