@@ -1,4 +1,4 @@
-const linter = `
+export const linter = `
 {
   "env": {
     "browser": true,
@@ -49,5 +49,33 @@ const linter = `
     "react/jsx-no-duplicate-props": 0
   }
 }`;
+
+export const nodeLinter = `
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-unused-expressions": "off",
+    "keyword-spacing": "off",
+    "linebreak-style": 0,
+    "no-console": 0,
+    "arrow-body-style": 0,
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "max-len": ["error", { "code": 1000 }],
+    "prefer-destructuring": 0,
+    "consistent-return": 0,
+    "no-plusplus": 0
+  }
+}
+`;
 
 export default linter;

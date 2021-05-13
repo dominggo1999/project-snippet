@@ -1,5 +1,5 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import linter from '../text/linter';
+import { linter, nodeLinter } from '../text/linter';
 
 const Linter = ({ copyText, theme }) => {
   return (
@@ -12,6 +12,15 @@ const Linter = ({ copyText, theme }) => {
         onClick={() => copyText(linter)}
       >
         {linter}
+      </SyntaxHighlighter>
+      <h1>node .eslintrc.json</h1>
+      <SyntaxHighlighter
+        language="javascript"
+        style={theme}
+        className="snippet"
+        onClick={() => copyText(nodeLinter)}
+      >
+        {nodeLinter}
       </SyntaxHighlighter>
     </div>
   );
